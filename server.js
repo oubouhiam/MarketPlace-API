@@ -24,7 +24,7 @@ const multer = require('multer');
 require('dotenv').config()
 
 //Mongoose
-mongoose.connect('mongodb+srv://admin:<admin>@cluster0.bqb3e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://admin:admin@cluster0.bqb3e.mongodb.net/MarketPlace?retryWrites=true&w=majority',{
     useNewUrlParser : true
 }).then(()=>{
     console.log("sessus");
