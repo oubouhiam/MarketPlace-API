@@ -15,7 +15,7 @@ app.use(bodyPrser.urlencoded({extended:true}))
 
 app.use(bodyPrser.json())
 
-const logWinston = require('../backend/log/log');
+
 
 const multer = require('multer');
 
@@ -27,10 +27,9 @@ require('dotenv').config()
 mongoose.connect('mongodb+srv://admin:<admin>@cluster0.bqb3e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
     useNewUrlParser : true
 }).then(()=>{
-    logWinston.info('Successfully Connected to the Database');
+    console.log("sessus");
 }).catch(err =>{
-    logWinston.error('could not connect to the database . Exiting now..',
-    process.exit());
+console.log("errorr");
 });
 
 
